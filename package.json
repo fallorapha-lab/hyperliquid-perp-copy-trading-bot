@@ -1,0 +1,36 @@
+{
+  "name": "hyperliquid-trading-bot",
+  "version": "1.0.0",
+  "description": "Hyperliquid copy-trading bot (TypeScript)",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "test": "tsc && tsx scripts/smoke-test.ts",
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "paper:status": "tsx src/index.ts paper status",
+    "paper:logs": "tsx src/index.ts paper logs",
+    "paper:logs:all": "tsx src/index.ts paper logs all",
+    "paper:reset": "tsx src/index.ts paper reset",
+    "paper:buy": "tsx src/index.ts paper buy",
+    "paper:sell": "tsx src/index.ts paper sell",
+    "paper:run": "tsx src/index.ts run",
+    "copy": "tsx src/index.ts copy",
+    "copy:status": "tsx src/index.ts copy status"
+  },
+  "keywords": ["hyperliquid", "trading", "typescript"],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@nktkas/hyperliquid": "^0.32.2",
+    "@tsjunk/chalk": "^5.6.2",
+    "dotenv": "^17.4.1",
+    "viem": "^2.47.10"
+  },
+  "devDependencies": {
+    "@types/node": "^25.5.2",
+    "tsx": "^4.21.0",
+    "typescript": "^6.0.2"
+  }
+}
