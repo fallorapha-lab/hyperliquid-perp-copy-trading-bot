@@ -1,4 +1,4 @@
-# Hyperliquid Copy-Trading Bot
+COPY_LEADER_ADDRESS=0xYourLeaderAddress# Hyperliquid Copy-Trading Bot
 
 A TypeScript CLI that **mirrors another wallet’s perpetual positions** on [Hyperliquid](https://hyperliquid.xyz/): it polls the leader’s account via the Info API and sends **market-style** orders so your size tracks `leaderSize × COPY_SIZE_RATIO`. Built with [`@nktkas/hyperliquid`](https://www.npmjs.com/package/@nktkas/hyperliquid) and [`viem`](https://viem.sh/) for signing.
 
